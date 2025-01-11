@@ -2,10 +2,11 @@ import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import Link from "next/link";
 import { icons } from "../../common/icons";
 import NavItems from "./NavItems";
+import HeaderEnd from "./HeaderEnd";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 inset-x-0 h-16 bg-white relative">
+    <header className="sticky top-0 z-50 inset-x-0 h-16 bg-white">
       <MaxWidthWrapper>
         <div className="border-b border-gray-200">
           <div className="flex h-16 items-center">
@@ -17,6 +18,9 @@ const Header = () => {
             </div>
             <div className="hidden lg:block z-50 lg:self-stretch lg:ml-8">
               <NavItems />
+            </div>
+            <div className="ml-auto flex items-center">
+              <HeaderEnd />
             </div>
           </div>
         </div>
